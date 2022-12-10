@@ -13,11 +13,6 @@ public:
     string name;
     Rope(string myname) : x{0.0}, y{0.0}, name{myname} {};
 
-    double Distance(const Rope &T)
-    {
-        return sqrt(pow(this->x - T.x, 2) + pow(this->y - T.y, 2));
-    }
-
     void move(const char &dir, Rope &T)
     {
         if (name == "head")
